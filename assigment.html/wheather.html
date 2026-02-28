@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-Day Weather Forecast</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .weather-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            background-color: #f8f9fa;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            padding: 15px;
+            text-align: left;
+            border-bottom: 2px solid #eee;
+        }
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            color: #2c3e50;
+        }
+        tr:hover {
+            background-color: #f1f8ff; 
+        }
+        .temp-high {
+            color: #e67e22; 
+            font-weight: bold;
+        }
+        .temp-low {
+            color: #3498db;
+            margin-left: 8px;
+        }
+        .condition-icon {
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="weather-card">
+    <h2>Weekly Forecast 🌤️</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Condition</th>
+                <th>Temperature</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Monday</strong></td>
+                <td><span class="condition-icon">☀️</span> Sunny</td>
+                <td><span class="temp-high">32°C</span> <span class="temp-low">22°C</span></td>
+            </tr>
+            <tr>
+                <td><strong>Tuesday</strong></td>
+                <td><span class="condition-icon">☁️</span> Cloudy</td>
+                <td><span class="temp-high">28°C</span> <span class="temp-low">20°C</span></td>
+            </tr>
+            <tr>
+                <td><strong>Wednesday</strong></td>
+                <td><span class="condition-icon">🌧️</span> Showers</td>
+                <td><span class="temp-high">24°C</span> <span class="temp-low">18°C</span></td>
+            </tr>
+            <tr>
+                <td><strong>Thursday</strong></td>
+                <td><span class="condition-icon">⛈️</span> Storms</td>
+                <td><span class="temp-high">22°C</span> <span class="temp-low">17°C</span></td>
+            </tr>
+            <tr>
+                <td><strong>Friday</strong></td>
+                <td><span class="condition-icon">🌤️</span> Partly Cloudy</td>
+                <td><span class="temp-high">27°C</span> <span class="temp-low">19°C</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
