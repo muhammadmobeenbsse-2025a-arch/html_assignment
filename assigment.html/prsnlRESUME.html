@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Resume | Personal Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdfdfd;
+            padding: 50px 20px;
+            color: #333;
+        }
+        .resume-table {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 20px;
+            border: 1px solid #ddd;
+            vertical-align: top;
+        }
+        .label-col {
+            width: 30%;
+            background-color: #2c3e50;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: right;
+        }
+        .name-header {
+            font-size: 24px;
+            color: #2980b9;
+            margin: 0;
+        }
+        .skills-tag {
+            background: #ecf0f1;
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 2px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <table class="resume-table">
+        <tr>
+            <td class="label-col">Personal Info</td>
+            <td>
+                <h1 class="name-header">YOUR NAME</h1>
+                <p>📍 Peshawar, Pakistan</p>
+                <p>📧 mobeen@example.com | 📱 +92 300 0000000</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="label-col">Expertise</td>
+            <td>
+                <span class="skills-tag">HTML5</span>
+                <span class="skills-tag">CSS3</span>
+                <span class="skills-tag">JavaScript</span>
+                <span class="skills-tag">UI Design</span>
+                <span class="skills-tag">Python</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="label-col">Experience</td>
+            <td>
+                <strong>Junior Web Developer</strong><br>
+                <em>Tech Hub Solutions (2022 - Present)</em>
+                <ul>
+                    <li>Built responsive websites for local businesses.</li>
+                    <li>Managed database entries and API integrations.</li>
+                </ul>
+
+                <br>
+
+                <strong>Intern Developer</strong><br>
+                <em>Software House (2021 - 2022)</em>
+                <ul>
+                    <li>Assisted in front-end debugging and testing.</li>
+                    <li>Created landing pages using HTML and CSS.</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="label-col">Education</td>
+            <td>
+                <strong>Bachelor in Software </strong><br>
+                CECOS University of peshawar (Graduated 2021)
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
